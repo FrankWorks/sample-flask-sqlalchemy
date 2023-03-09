@@ -5,7 +5,8 @@
 			<div class="logo-header" data-background-color="dark2">
 				
 				<a href="index.html" class="logo">
-					<img src="/static/assets/img/logo.svg" alt="navbar brand" class="navbar-brand">
+					<img src="/static/assets/img/DPR_Log_No_BackGroup.png" width="60" height="60" alt="navbar brand" class="navbar-brand">
+					Project X
 				</a>
 				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon">
@@ -43,7 +44,7 @@
 								<i class="fa fa-search"></i>
 							</a>
 						</li>
-						<li class="nav-item dropdown hidden-caret">
+						<!-- <li class="nav-item dropdown hidden-caret">
 							<a class="nav-link dropdown-toggle" href="#" id="messageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								<i class="fa fa-envelope"></i>
 							</a>
@@ -112,8 +113,8 @@
 									<a class="see-all" href="javascript:void(0);">See all messages<i class="fa fa-angle-right"></i> </a>
 								</li>
 							</ul>
-						</li>
-						<li class="nav-item dropdown hidden-caret">
+						</li> -->
+						<!-- <li class="nav-item dropdown hidden-caret">
 							<a class="nav-link dropdown-toggle" href="#" id="notifDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								<i class="fa fa-bell"></i>
 								<span class="notification">4</span>
@@ -168,8 +169,8 @@
 								</li>
 								<li>
 									<a class="see-all" href="javascript:void(0);">See all notifications<i class="fa fa-angle-right"></i> </a>
-								</li>
-							</ul>
+								</li> -->
+							<!-- </ul>
 						</li>
 						<li class="nav-item dropdown hidden-caret">
 							<a class="nav-link" data-toggle="dropdown" href="#" aria-expanded="false">
@@ -223,13 +224,25 @@
 									</div>
 								</div>
 							</div>
-						</li>
-						<li class="nav-item dropdown hidden-caret">
-							<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false">
+						</li> -->
+						<!-- <li class="nav-item dropdown hidden-caret"> -->
+							<li class="ml-md-auto py-2 py-md-0">
+							<!-- <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false">
 								<div class="avatar-sm">
 									<img src="/static/assets/img/profile.jpg" alt="..." class="avatar-img rounded-circle">
-								</div>
-							</a>
+									Login
+								</div> 
+								
+							</a> -->
+							<form action="/Office365Login" method="post">
+							<button class="btn btn-default" name="Login" onclick="Office365Login()">
+								<span class="btn-label">
+									<i class="fa fa-bookmark"></i>
+								</span>
+								Login
+							</button>
+							</form>
+							<!-- <a class=btn btn-primary" href="/login.html">Login</a> -->
 							<ul class="dropdown-menu dropdown-user animated fadeIn">
 								<div class="dropdown-user-scroll scrollbar-outer">
 									<li>
@@ -253,10 +266,9 @@
 									</li>
 								</div>
 							</ul>
-						</li>
+						</li> 
 					</ul>
 				</div>
 			</nav>
 			<!-- End Navbar -->
         </div>
-        

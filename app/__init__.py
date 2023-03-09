@@ -10,6 +10,7 @@ import os
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate    import Migrate
+from DPR.gem import gem_bp
 
 # Inject Flask magic
 app = Flask(__name__)
@@ -25,3 +26,5 @@ Migrate(app, db)
 
 # Import routing to render the pages
 from app import views, models
+
+app.register_blueprint(gem_bp)

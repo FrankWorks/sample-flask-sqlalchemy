@@ -4,7 +4,7 @@ Copyright (c) 2019 - present AppSeed.us
 """
 
 # Flask modules
-from flask   import render_template, request
+from flask   import redirect, render_template, request
 from jinja2  import TemplateNotFound
 
 # App modules
@@ -39,4 +39,9 @@ def get_segment( request ):
         return segment    
 
     except:
-        return None   
+        return None 
+@app.route('/Office365Login',methods=["GET", "POST"])
+def Office365Login():
+    print('In SomeFunction')
+    # return "Nothing"
+    return redirect('/Office365Login.html')

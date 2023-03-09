@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "database": "${workspaceFolder:sample-flask-sqlalchemy}/app/db.sqlite3",
+            "name": "LocalLite"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}
