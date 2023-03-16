@@ -20,7 +20,8 @@ s = sqldb.UserList()
 u = json.loads(sqldb.UserList.listUser(s))
 
 # App main route + generic routing
-@app.route('/', defaults={'path': 'index.html'})
+# @app.route('/', defaults={'path': 'index.html'})
+@app.route('/', defaults={'path': 'DPRData.html'})
 @app.route('/<path>')
 def index(path):
 
