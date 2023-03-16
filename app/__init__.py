@@ -5,6 +5,7 @@ Copyright (c) 2019 - present AppSeed.us
 
 # Import core packages
 import os
+import sys
 
 # Import Flask 
 from flask import Flask
@@ -12,9 +13,11 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_migrate    import Migrate
 from DPR.gem import gem_bp
 
+
+sys.path.append('./app/models')
 # Inject Flask magic
 app = Flask(__name__)
-
+# app.config['DEBUG'] = True
 # Load configuration
 app.config.from_object('app.config.Config')
 
