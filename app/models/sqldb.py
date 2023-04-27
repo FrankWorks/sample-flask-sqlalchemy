@@ -7,8 +7,8 @@ class UserList():
 
         
     connection_sring = ("Driver={SQL Server Native Client 11.0};"
-                "Server=pksql3,8433;"
-                "Database=Contracts;"
+                "Server=;"
+                "Database=;"
                 "Trusted_Connection=yes;")
     conn = pyodbc.connect(connection_sring)
 
